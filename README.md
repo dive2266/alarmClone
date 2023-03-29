@@ -14,11 +14,11 @@
 UITabBarController 的使用方式通常包括以下步驟：
 
 1. 創建一個 UITabBarController 實例，可以通過程式碼創建，也可以在 Storyboard 中拖拽一個 UITabBarController 對象到 Interface Builder 中。
-2. 為每個選項卡創建一個對應的視圖控制器，通常使用 UINavigationController 或者其他自定義的視圖控制器。
-3. 將每個視圖控制器設置為 UITabBarController 的一個子視圖控制器（viewControllers）。
+2. 為每個選項卡創建一個對應的viewController，通常使用 UINavigationController 或者其他自定義的viewController。
+3. 將每個viewController設置為 UITabBarController 的一個子viewController。
 4. 為每個選項卡設置一個圖標（icon）和一個標題（title）。
-5. 可以通過 UITabBarController 的其他屬性和方法來定制選項卡列和視圖控制器的行為，例如：選項卡的位置（tabBarPosition）、選項卡的樣式（tabBarStyle）、選項卡的顏色（tabBar.tintColor）等。
-6. 最後，將 UITabBarController 的視圖添加到應用程式的主視圖控制器中，通常使用 UINavigationController 或者其他自定義的視圖控制器。
+5. 可以通過 UITabBarController 的其他屬性和方法來定制選項卡列和viewController的行為，例如：選項卡的位置（tabBarPosition）、選項卡的樣式（tabBarStyle）、選項卡的顏色（tabBar.tintColor）等。
+6. 最後，將 UITabBarController 的視圖添加到應用程式的主視圖控制器中，通常使用 UINavigationController 或者其他自定義的viewController。
 
 ### Sample 
 #### 範例
