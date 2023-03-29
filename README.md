@@ -105,3 +105,41 @@ class AlarmTabBarController: UITabBarController {
 }
 
 ```
+### UINavigationController
+UINavigationController 的核心概念是「堆疊」，即一個包含多個視圖控制器的 LIFO（Last In First Out）堆疊。當一個視圖控制器被推送到堆疊中時，它會被添加到堆疊的頂部，並且成為當前的活動視圖控制器。當用戶從當前視圖控制器返回上一個視圖控制器時，當前視圖控制器會從堆疊中彈出，上一個視圖控制器會成為當前的活動視圖控制器。
+
+### Sample
+```swift
+// 創建一個根視圖控制器
+let rootViewController = UIViewController()
+rootViewController.title = "Root View Controller"
+rootViewController.view.backgroundColor = UIColor.white
+
+// 創建一個 UINavigationController，並將根視圖控制器作為其根視圖控制器
+let navigationController = UINavigationController(rootViewController: rootViewController)
+
+```
+我們可以這麼做
+```swift
+import UIKit
+
+class WorldClockNavigationController: UINavigationController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewControllers = [worldClockViewController]
+        setNavigationBar()
+    }
+    
+    var worldClockViewController: WorldClockViewController {
+        let worldClockViewController = WorldClockViewController()
+        worldClockViewController.title = title
+        worldClockViewController.overrideUserInterfaceStyle = overrideUserInterfaceStyle
+        return worldClockViewController
+    }
+    
+    func setNavigationBar() {
+        navigationBar.prefersLargeTitles = true
+    }
+}
+```
