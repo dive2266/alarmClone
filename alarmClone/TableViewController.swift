@@ -19,24 +19,10 @@ class TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
         
         // Register custom cell class to table view
-        self.tableView.register(timeZoneListTableViewCell.self, forCellReuseIdentifier: "TimeZoneListTableViewCell")
         
         // Automatically calculate row height
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
-    }
-
-
-    
-    // MARK: - Table view data source
-    class timeZoneListTableViewCell: UITableViewCell{
-        
-        @IBOutlet weak var region: UILabel!
-        
-        //@IBOutlet weak var time: UILabel!
-        
-        //@IBOutlet weak var time_equation: UILabel!
-        
     }
     
     let timeZoneList = ["America/New_York", "America/Chicago", "America/Denver", "America/Los_Angeles", "America/Phoenix", "Europe/London", "Europe/Paris", "Europe/Moscow", "Asia/Tokyo", "Asia/Shanghai", "Australia/Sydney", "Pacific/Auckland", "Africa/Cairo", "Asia/Dubai", "America/Sao_Paulo", "Asia/Kolkata", "America/Toronto", "Asia/Seoul", "Europe/Stockholm", "Pacific/Honolulu"]
@@ -55,12 +41,12 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TimeZoneListTableViewCell", for: indexPath) as? timeZoneListTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TimeZoneListTableViewCell", for: indexPath) as? TimeZoneListTableViewCell else {
             fatalError("Unable to dequeue a TimeZoneListTableViewCell")
         }
         
         // Configure the cell...
-        cell.region?.text = timeZoneList[indexPath.row]
+        cell.regionLabel.text = timeZoneList[indexPath.row]
 
         return cell
     }

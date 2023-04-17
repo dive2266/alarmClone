@@ -14,6 +14,7 @@
 		678ECF5B29D3DDDA00E47EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678ECF5929D3DDDA00E47EDB /* LaunchScreen.storyboard */; };
 		679A161429E53DE40010A7C1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A161329E53DE40010A7C1 /* TableViewController.swift */; };
 		679A161829E554630010A7C1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679A161729E554630010A7C1 /* TabBarController.swift */; };
+		AE05F71A29ED0322004D0B77 /* TimeZoneListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE05F71929ED0322004D0B77 /* TimeZoneListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		678ECF5C29D3DDDA00E47EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679A161329E53DE40010A7C1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		679A161729E554630010A7C1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AE05F71929ED0322004D0B77 /* TimeZoneListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZoneListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				678ECF5029D3DDDA00E47EDB /* SceneDelegate.swift */,
 				679A161329E53DE40010A7C1 /* TableViewController.swift */,
 				679A161729E554630010A7C1 /* TabBarController.swift */,
+				AE05F71929ED0322004D0B77 /* TimeZoneListTableViewCell.swift */,
 				678ECF5429D3DDDA00E47EDB /* Main.storyboard */,
 				678ECF5729D3DDDA00E47EDB /* Assets.xcassets */,
 				678ECF5929D3DDDA00E47EDB /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				678ECF4F29D3DDDA00E47EDB /* AppDelegate.swift in Sources */,
 				679A161829E554630010A7C1 /* TabBarController.swift in Sources */,
+				AE05F71A29ED0322004D0B77 /* TimeZoneListTableViewCell.swift in Sources */,
 				679A161429E53DE40010A7C1 /* TableViewController.swift in Sources */,
 				678ECF5129D3DDDA00E47EDB /* SceneDelegate.swift in Sources */,
 			);
